@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/coloryellow"
+    tools:context=".MainActivity">
+
+    <farmers.tech.waitingbee.Widgets.AnimatedSvgView
+        android:id="@+id/animated_svg_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        app:animatedSvgFillColors="@array/bee_glyph_colors"
+        app:animatedSvgGlyphStrings="@array/bee_glyph_strings"
+        app:animatedSvgTraceTime="2000"
+        app:animatedSvgTraceTimePerGlyph="1000"
+        android:layout_alignParentTop="true" />
+
+
+    <ImageView
+        android:id="@+id/text_image_title"
+        android:layout_width="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/transparent_text_effect"
+        android:visibility="invisible" />
+
+</RelativeLayout>

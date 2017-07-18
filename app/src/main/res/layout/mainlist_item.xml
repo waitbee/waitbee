@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Title Of property-->
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/profile_item_pic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_menu_camera"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/profile_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:padding="5dp"
+        android:text="title of property"
+        android:textColor="#222"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/profile_item_pic"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/profile_item_title"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

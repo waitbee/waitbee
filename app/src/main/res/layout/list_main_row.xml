@@ -1,0 +1,150 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+        <!-- Title Of property-->
+        <TextView
+            android:id="@+id/Main_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="title of property"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="22dp" />
+
+
+        <!-- open now -->
+        <TextView
+            android:id="@+id/Main_list_opennow"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_list_title"
+            android:textColor="#088604"
+            android:textSize="15dip"
+            android:padding="8dp"
+            android:layout_marginTop="1dip"
+            android:text="Open Now" />
+        <TextView
+            android:id="@+id/Main_list_notknown"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_list_title"
+            android:textColor="#0d0d0d"
+            android:textSize="15dip"
+            android:padding="8dp"
+            android:layout_marginTop="1dip"
+            android:text="N/A" />
+        <!-- closed -->
+        <TextView
+            android:id="@+id/Main_list_Closed"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Main_list_title"
+            android:textColor="#f41004"
+            android:padding="8dp"
+            android:textSize="15dip"
+            android:layout_marginTop="1dip"
+            android:text="Closed" />
+        <!-- address -->
+
+        <TextView
+            android:id="@+id/Main_list_Vicinity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@id/Main_list_Closed"
+            android:textSize="15dip"
+            android:layout_marginTop="1dip"
+            android:text="Address:" />
+
+        <TextView
+            android:id="@+id/hiddeniconref"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignTop="@+id/Main_list_Vicinity"
+            android:text="" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/Main_list_Rating"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""-->
+            <!--android:layout_alignTop="@+id/Main_list_Vicinity" />-->
+
+        <!-- Distance -->
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainlist_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/Main_list_title"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:layout_marginTop="10dp"
+            android:isIndicator="true"/>
+
+        <TextView
+            android:id="@+id/Main_list_Distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mainlist_rating"
+            android:gravity="right"
+            android:text=" x miles away"
+            android:layout_marginRight="5dip"
+            android:textSize="15dip"
+            android:textColor="#10bcc9"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/currentwaititme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="2dp"
+            android:layout_below="@id/Main_list_Distance"
+            android:gravity="right"
+            android:text=" Wait Time"
+            android:layout_marginRight="5dip"
+            android:textSize="15dip"
+            android:textColor="#10bcc9"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/PlaceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="2dp"
+            android:layout_below="@id/currentwaititme"
+            android:gravity="right"
+            android:text=" Wait Time"
+            android:layout_marginRight="5dip"
+            android:textSize="15dip"
+            android:textColor="#10bcc9"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
